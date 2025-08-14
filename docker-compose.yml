@@ -21,6 +21,7 @@ services:
       - ~/.ssl/lukas-bag.online_bundle.crt:/etc/nginx/lukas-bag.online_bundle.crt:ro
       - ~/.ssl/lukas-bag.online.key:/etc/nginx/lukas-bag.online.key:ro
       - ~/logs/nginx:/var/log/nginx:rw 
+      - ~/static:/usr/share/nginx/html:ro
     depends_on:
       - lukas_bag
 
